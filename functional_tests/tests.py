@@ -28,8 +28,7 @@ class NewVisitorTest(LiveServerTestCase):
                     raise e
                 time.sleep(0.5)
 
-    def test_can_start_a_list_and_retrieve_it_later(self):
-        '''можно начать список и получить его позже'''
+    def test_can_start_a_list_for_one_user(self):
         # Лиса хочет опробовать крутое приложение для составления списка дел
         self.browser.get(self.live_server_url)
 
