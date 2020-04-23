@@ -62,12 +62,6 @@ class NewVisitorTest(LiveServerTestCase):
         self.wait_for_row_in_list_table('1: Купить павлиньи перья')
         self.wait_for_row_in_list_table('2: Сделать блесну из павлиньих перьев')
 
-        # Лиса видит, что сайт сгенерировал для нее уникальный урл-адрес - об этом
-        # выводится небольшой текст с объяснениями
-        self.fail('Закончить тест!')
-
-        # Она посещает этот адрес и убеждается, что ее список по-прежнему там.
-
         # Лиса закрывает браузер и возвращается к своим делам.
 
     def test_multiple_users_can_start_lists_at_different_urls(self):
