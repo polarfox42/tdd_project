@@ -3,7 +3,7 @@ Description=Gunicorn server for SITENAME
 
 [Service]
 Restart=on-failure
-User=username
+User=fox
 WorkingDirectory=/home/fox/sites/SITENAME/source
 ExecStart=/home/fox/sites/SITENAME/virtualenv/bin/gunicorn --bind unix:/tmp/SITENAME.socket selfdev.wsgi:application
 
